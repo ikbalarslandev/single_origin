@@ -20,6 +20,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         event:
           "flex items-center justify-center gap-3 w-full max-w-md hover:bg-blood-dark text-blood-light  font-semibold py-6 px-4 rounded-2xl transition-all text-xl duration-300 hover:scale-105 shadow-lg mt-3 border-2 border-blood-light",
+        comingsoon:
+          "flex items-center justify-center gap-3 w-full max-w-md hover:bg-blood-dark text-gray-400 bg-black/70  font-semibold py-6 px-4 rounded-2xl transition-all text-xl duration-300 hover:scale-105 shadow-lg mt-3 border-2 border-black",
       },
       size: {
         default:

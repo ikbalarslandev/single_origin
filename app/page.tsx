@@ -32,10 +32,10 @@ export default function Home() {
         {/* Divider */}
         <div className="relative w-full max-w-md my-6">
           <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t border-blood-dark/20"></div>
+            <div className="w-full border-t border-blood-dark"></div>
           </div>
           <div className="relative flex justify-center">
-            <span className="px-3 border border-blood-dark bg-nigga-brown  text-blood-light rounded-full py-1 font-semibold">
+            <span className="px-3 border border-blood-dark bg-nigga-brown  text-blood-dark rounded-full py-1 font-semibold">
               Events
             </span>
           </div>
@@ -56,25 +56,25 @@ export default function Home() {
             Sugar
           </Button>
           <Button
-            variant="event"
+            variant="comingsoon"
             onClick={() => console.log("Coffee event clicked")}
           >
             Cacao
           </Button>
           <Button
-            variant="event"
+            variant="comingsoon"
             onClick={() => console.log("Coffee event clicked")}
           >
             Beer
           </Button>
           <Button
-            variant="event"
+            variant="comingsoon"
             onClick={() => console.log("Coffee event clicked")}
           >
             Rubber
           </Button>
           <Button
-            variant="event"
+            variant="comingsoon"
             onClick={() => console.log("Coffee event clicked")}
           >
             Rice
@@ -85,7 +85,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <p className="text-center text-gray-500 text-xs py-4">
+      <p className="text-center text-black text-xs py-4">
         © {new Date().getFullYear()} Single Origin Istanbul
       </p>
     </div>

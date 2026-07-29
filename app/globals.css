@@ -10,6 +10,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom Colors */
+  --color-nigga-brown: #a6836c;
+  --color-blood-light: #b21b1b;
+  --color-blood-dark: #590000;
 }
 
 @media (prefers-color-scheme: dark) {

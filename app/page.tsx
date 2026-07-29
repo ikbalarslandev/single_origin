@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white ">
+    <div className="min-h-screen bg-white flex flex-col">
       {/* logo */}
       <Image
         src="/long_logo.png"
@@ -15,7 +15,7 @@ export default function Home() {
         className="object-contain"
         priority
       />
-      <div className="flex flex-col items-center justify-center ">
+      <div className="flex-1 flex flex-col items-center justify-start">
         <p className="text-center text-gray-600 mb-6 mx-5">
           Experience the story behind everyday ingredients
         </p>
@@ -90,11 +90,11 @@ export default function Home() {
             <span>Coffee</span>
           </button>
         </div>
-        {/* Footer */}
-        <p className="text-center text-gray-500 text-xs mt-6">
-          © {new Date().getFullYear()} Single Origin Istanbul
-        </p>
       </div>
+      {/* Footer */}
+      <p className="text-center text-gray-500 text-xs py-4">
+        © {new Date().getFullYear()} Single Origin Istanbul
+      </p>
     </div>
   );
 }

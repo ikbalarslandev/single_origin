@@ -2,6 +2,7 @@
 
 import { FaInstagram, FaTiktok, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -75,20 +76,14 @@ export default function Home() {
 
         <div className="flex flex-col items-center gap-3 w-full max-w-md px-4">
           {/* Sugar Event Button */}
-          <button
-            onClick={() => console.log("Sugar event clicked")}
-            className="flex items-center justify-center gap-3 w-full max-w-md bg-blood-light hover:bg-blood-dark text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
-          >
-            <span>Sugar</span>
-          </button>
 
           {/* Coffee Event Button */}
-          <button
+          <Button
+            variant="event"
             onClick={() => console.log("Coffee event clicked")}
-            className="flex items-center justify-center gap-3 w-full max-w-md bg-blood-light hover:bg-blood-dark text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg mt-3"
           >
             <span>Coffee</span>
-          </button>
+          </Button>
         </div>
       </div>
       {/* Footer */}

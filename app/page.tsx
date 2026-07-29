@@ -45,22 +45,27 @@ export default function Home() {
         <div className="flex flex-col items-center gap-3 w-full max-w-md px-4">
           <Button
             variant="event"
-            onClick={() => console.log("Coffee event clicked")}
+            onClick={() =>
+              window.open(
+                "https://calendly.com/singleoriginistanbul/coffee",
+                "_blank",
+              )
+            }
           >
             Coffee
           </Button>
           <Button
             variant="event"
-            onClick={() => console.log("Coffee event clicked")}
+            onClick={() =>
+              window.open(
+                "https://calendly.com/singleoriginistanbul/sugar",
+                "_blank",
+              )
+            }
           >
             Sugar
           </Button>
-          <Button
-            variant="comingsoon"
-            onClick={() => console.log("Coffee event clicked")}
-          >
-            Cacao
-          </Button>
+          <Button variant="coming-soon">Cacao</Button>
           <Button
             variant="comingsoon"
             onClick={() => console.log("Coffee event clicked")}

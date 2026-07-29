@@ -1,6 +1,5 @@
 import { Button as ButtonPrimitive } from "@base-ui/react/button";
 import { cva, type VariantProps } from "class-variance-authority";
-
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
@@ -19,9 +18,11 @@ const buttonVariants = cva(
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
         event:
-          "flex items-center justify-center gap-3 w-full max-w-md hover:bg-blood-dark text-blood-light  font-semibold py-6 px-4 rounded-2xl transition-all text-xl duration-300 hover:scale-105 shadow-lg mt-3 border-2 border-blood-light",
-        comingsoon:
-          "flex items-center justify-center gap-3 w-full max-w-md hover:bg-blood-dark text-gray-400 bg-black/70  font-semibold py-6 px-4 rounded-2xl transition-all text-xl duration-300 hover:scale-105 shadow-lg mt-3 border-2 border-black",
+          "flex items-center justify-center gap-3 w-full max-w-md hover:bg-blood-dark text-blood-light font-semibold py-6 px-4 rounded-2xl transition-all text-xl duration-300 hover:scale-105 shadow-lg mt-3 border-2 border-blood-light",
+        "coming-soon": [
+          "flex items-center justify-center gap-3 w-full max-w-md hover:bg-blood-dark text-black font-semibold py-6 px-4 rounded-2xl transition-all text-xl duration-300 hover:scale-105 shadow-lg mt-3 border-2 border-blood-light",
+          "relative overflow-hidden cursor-not-allowed",
+        ],
       },
       size: {
         default:
@@ -48,14 +49,35 @@ function Button({
   className,
   variant = "default",
   size = "default",
+  children,
   ...props
 }: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
+  if (variant === "coming-soon") {
+    return (
+      <ButtonPrimitive
+        data-slot="button"
+        className={cn(buttonVariants({ variant, size, className }))}
+        disabled
+        {...props}
+      >
+        <span className="opacity-30">{children}</span>
+        <div className="absolute inset-0 bg-black/20 opacity-40  flex items-center justify-center rounded-2xl pointer-events-none">
+          <span className="text-black/20 font-bold text-sm tracking-wider uppercase">
+            Coming Soon
+          </span>
+        </div>
+      </ButtonPrimitive>
+    );
+  }
+
   return (
     <ButtonPrimitive
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
-    />
+    >
+      {children}
+    </ButtonPrimitive>
   );
 }
 

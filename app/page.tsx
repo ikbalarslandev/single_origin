@@ -75,8 +75,6 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col items-center gap-3 w-full max-w-md px-4">
-          {/* Sugar Event Button */}
-
           {/* Coffee Event Button */}
           <Button
             variant="event"

@@ -88,7 +88,7 @@ export default function CalendlyButton({
 
     try {
       window.Calendly.initPopupWidget({
-        url: `https://calendly.com/singleoriginistanbul/${type}`,
+        url: `https://calendly.com/singleoriginistanbul/${type}?background_color=590000&text_color=ffffff&primary_color=ffffff`,
         prefill: {
           name: prefill.name || "",
           email: prefill.email || "",

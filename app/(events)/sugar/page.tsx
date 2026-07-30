@@ -1,9 +1,9 @@
 import CallendyButton from "@/components/services/calendy";
 
-export default function CoffeeEventsPage() {
+export default function SugarEventsPage() {
   return (
     <div>
-      <CallendyButton type="coffee" />
+      <CallendyButton type="sugar" />
     </div>
   );
 }

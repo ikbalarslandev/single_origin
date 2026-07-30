@@ -1,11 +1,13 @@
 "use client";
 
-import { FaInstagram, FaTiktok, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Socials from "@/components/general/social/Socials";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen bg-nigga-brown flex flex-col">
       {/* Logo */}
@@ -43,26 +45,10 @@ export default function Home() {
 
         {/* Event Buttons */}
         <div className="flex flex-col items-center gap-3 w-full max-w-md px-4">
-          <Button
-            variant="event"
-            onClick={() =>
-              window.open(
-                "https://calendly.com/singleoriginistanbul/coffee",
-                "_blank",
-              )
-            }
-          >
+          <Button variant="event" onClick={() => router.push("/coffee")}>
             Coffee
           </Button>
-          <Button
-            variant="event"
-            onClick={() =>
-              window.open(
-                "https://calendly.com/singleoriginistanbul/sugar",
-                "_blank",
-              )
-            }
-          >
+          <Button variant="event" onClick={() => router.push("/sugar")}>
             Sugar
           </Button>
           <Button variant="comingsoon">Cacao</Button>

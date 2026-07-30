@@ -17,21 +17,10 @@ const CHOOSE_DATA = [
 ];
 
 const CULTURE_DATA = [
-  { flag: "🇫🇷", label: "France", description: "Café au lait culture" },
-  { flag: "🇯🇵", label: "Japan", description: "Siphon & pour-over" },
-  { flag: "🇹🇷", label: "Turkey", description: "Cezve & fortune-telling" },
-  { flag: "🇲🇽", label: "Mexico", description: "Café de olla" },
-];
-
-const FLAVOR_DATA = [
-  { emoji: "🍫", name: "Chocolate" },
-  { emoji: "🍓", name: "Berry" },
-  { emoji: "🌰", name: "Nutty" },
-  { emoji: "🌸", name: "Floral" },
-  { emoji: "🍊", name: "Citrus" },
-  { emoji: "🍯", name: "Caramel" },
-  { emoji: "🌿", name: "Herbal" },
-  { emoji: "🍷", name: "Winey" },
+  { label: "France", description: "Café au lait culture" },
+  { label: "Japan", description: "Siphon & pour-over" },
+  { label: "Turkey", description: "Cezve & fortune-telling" },
+  { label: "Mexico", description: "Café de olla" },
 ];
 
 const COFFEE_TASTING_DATA = [
@@ -41,12 +30,7 @@ const COFFEE_TASTING_DATA = [
   { name: "Kenya AA", notes: "Berry, wine, bright acidity" },
   { name: "Costa Rica Tarrazu", notes: "Honey, orange, cocoa" },
   { name: "Jamaica Blue Mountain", notes: "Mild, creamy, floral" },
+  { name: "Jamaica Blue Mountain", notes: "Mild, creamy, floral" },
 ];
 
-export {
-  HISTORY_DATA,
-  CHOOSE_DATA,
-  CULTURE_DATA,
-  FLAVOR_DATA,
-  COFFEE_TASTING_DATA,
-};
+export { HISTORY_DATA, CHOOSE_DATA, CULTURE_DATA, COFFEE_TASTING_DATA };

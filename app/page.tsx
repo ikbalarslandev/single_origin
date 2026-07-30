@@ -58,12 +58,7 @@ export default function Home() {
           >
             Beer
           </Button>
-          <Button
-            variant="comingsoon"
-            onClick={() => console.log("Coffee event clicked")}
-          >
-            Rubber
-          </Button>
+
           <Button
             variant="comingsoon"
             onClick={() => console.log("Coffee event clicked")}

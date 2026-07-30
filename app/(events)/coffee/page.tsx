@@ -1,7 +1,12 @@
 "use client";
 
 import Step from "@/components/event/stepCard";
-import { HISTORY_DATA, CHOOSE_DATA, CULTURE_DATA } from "@/data/coffee";
+import {
+  HISTORY_DATA,
+  CHOOSE_DATA,
+  CULTURE_DATA,
+  COFFEE_TASTING_DATA,
+} from "@/data/coffee";
 import HeaderSection from "@/components/event/header";
 import CallendyBanner from "@/components/general/calendyBanner";
 import TastingBanner from "@/components/event/tasting";
@@ -32,7 +37,7 @@ export default function CoffeeEventsPage() {
           data={CULTURE_DATA}
           duration="20 minutes"
         />
-        <TastingBanner stepNumber={4} />
+        <TastingBanner stepNumber={4} tastingData={COFFEE_TASTING_DATA} />
         <CallendyBanner type="coffee" />
       </div>
     </div>

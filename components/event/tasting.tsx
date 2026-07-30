@@ -16,21 +16,17 @@ const FLAVOR_DATA = [
 ];
 
 interface TastingBannerProps {
-  title?: string;
-  tastingData?: typeof COFFEE_TASTING_DATA;
-  className?: string;
-  stepNumber?: number;
+  stepNumber: number;
   duration?: string;
   tastingTitle?: string;
+  tastingData: { name: string; notes: string }[];
 }
 
 const TastingBanner = ({
-  title = "Tasting Session",
-  tastingData = COFFEE_TASTING_DATA,
-  className = "",
   stepNumber = 4,
   duration = "30 minutes",
   tastingTitle = "Different Varieties to Taste",
+  tastingData = COFFEE_TASTING_DATA,
 }: TastingBannerProps) => {
   const [wheelSize, setWheelSize] = useState(280);
 
@@ -56,10 +52,10 @@ const TastingBanner = ({
   const center = wheelSize / 2;
 
   return (
-    <Card className={`border-blood-dark border bg-white/50 ${className}`}>
+    <Card className={`border-blood-dark border bg-white/50 `}>
       <CardHeader className="border-b-2 pb-2 border-gray-500/40">
         <CardTitle className="text-lg font-bold">
-          Step {stepNumber}: {title}
+          Step {stepNumber}: Tasting Session
         </CardTitle>
         {duration && <p className="text-sm text-black">Duration: {duration}</p>}
       </CardHeader>
@@ -117,7 +113,7 @@ const TastingBanner = ({
           </p>
           <div className="space-y-2">
             {tastingData.map((item, index) => (
-              <div className={`flex items-center gap-3 `}>
+              <div key={index} className={`flex items-center gap-3 `}>
                 <GoDot className="text-blood-dark" size={12} />
                 <span className="font-semibold text-sm min-w-25">
                   {item.name}

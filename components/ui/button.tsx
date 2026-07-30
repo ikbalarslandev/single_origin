@@ -19,7 +19,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         event:
           "flex items-center justify-center gap-3 w-full max-w-md hover:bg-blood-dark text-blood-light font-semibold py-6 px-4 rounded-2xl transition-all text-xl duration-300 hover:scale-105 shadow-lg mt-3 border-2 border-blood-light",
-        "coming-soon": [
+        comingsoon: [
           "flex items-center justify-center gap-3 w-full max-w-md hover:bg-blood-dark text-black font-semibold py-6 px-4 rounded-2xl transition-all text-xl duration-300 hover:scale-105 shadow-lg mt-3 border-2 border-blood-light",
           "relative overflow-hidden cursor-not-allowed",
         ],
@@ -52,7 +52,7 @@ function Button({
   children,
   ...props
 }: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
-  if (variant === "coming-soon") {
+  if (variant === "comingsoon") {
     return (
       <ButtonPrimitive
         data-slot="button"

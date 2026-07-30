@@ -65,7 +65,7 @@ export default function Home() {
           >
             Sugar
           </Button>
-          <Button variant="coming-soon">Cacao</Button>
+          <Button variant="comingsoon">Cacao</Button>
           <Button
             variant="comingsoon"
             onClick={() => console.log("Coffee event clicked")}

@@ -4,7 +4,7 @@ const HISTORY_DATA = [
   { label: "Ancient Persia", description: "First Sugar Trade" },
   { label: "7th Century", description: "White Sugar Invention" },
   { label: "13th Century", description: "Ispah Rebellion" },
-  { label: "13th–14th Century", description: "Introduction to Europe" },
+  { label: "13th Century", description: "Introduction to Europe" },
   { label: "15th Century", description: "Madeira" },
   { label: "1493", description: "Sugar Reaches the New World" },
   { label: "1534", description: "Brazilian Sugar Colonies" },
@@ -14,7 +14,7 @@ const HISTORY_DATA = [
   { label: "1624", description: "Creating Taiwan" },
   { label: "1811", description: "Sugar Beet Discovery" },
   { label: "1850", description: "Sugar Consumption Boom" },
-  { label: "1930s–1940s", description: "Zyklon B" },
+  { label: "1930s–1940s", description: "Hitler" },
 ];
 
 const CHOOSE_DATA = [

@@ -52,19 +52,6 @@ export default function Home() {
             Sugar
           </Button>
           <Button variant="comingsoon">Cacao</Button>
-          <Button
-            variant="comingsoon"
-            onClick={() => console.log("Coffee event clicked")}
-          >
-            Beer
-          </Button>
-
-          <Button
-            variant="comingsoon"
-            onClick={() => console.log("Coffee event clicked")}
-          >
-            Rice
-          </Button>
 
           {/* Add more event buttons here */}
         </div>

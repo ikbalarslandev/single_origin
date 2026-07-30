@@ -13,7 +13,7 @@ const CHOOSE_DATA = [
   { label: "Altitude", description: "Flavor complexity" },
   { label: "Roasting", description: "Light to dark profiles" },
   { label: "Caffeine", description: "Energy levels" },
-  { label: "Brewing", description: "6 different techniques" },
+  { label: "Brewing", description: "2 different techniques" },
 ];
 
 const CULTURE_DATA = [

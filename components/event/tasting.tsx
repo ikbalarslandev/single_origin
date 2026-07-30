@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { COFFEE_TASTING_DATA } from "@/data/coffee";
 import { useEffect, useState } from "react";
+import { GoDot } from "react-icons/go";
 
 const FLAVOR_DATA = [
   { emoji: "🍫", name: "Chocolate" },
@@ -116,18 +117,13 @@ const TastingBanner = ({
           </p>
           <div className="space-y-2">
             {tastingData.map((item, index) => (
-              <div
-                key={index}
-                className={`flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 ${
-                  index !== tastingData.length - 1
-                    ? "border-b border-blood-dark/30 pb-2"
-                    : ""
-                }`}
-              >
-                <span className="font-semibold text-sm text-black min-w-35">
+              <div className={`flex items-center gap-3 `}>
+                <GoDot className="text-blood-dark" size={12} />
+                <span className="font-semibold text-sm min-w-25">
                   {item.name}
                 </span>
-                <span className="text-xs text-gray-700">{item.notes}</span>
+
+                <span className="text-sm text-gray-700">{item.notes}</span>
               </div>
             ))}
           </div>

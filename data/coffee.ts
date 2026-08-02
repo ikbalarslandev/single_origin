@@ -18,19 +18,34 @@ const CHOOSE_DATA = [
 
 const CULTURE_DATA = [
   { label: "France", description: "Café au lait culture" },
-  { label: "Japan", description: "Siphon & pour-over" },
-  { label: "Turkey", description: "Cezve & fortune-telling" },
+  { label: "Nigeria", description: "Nescafe" },
+  { label: "Japan", description: "Siphon" },
+  { label: "Algeria", description: "Mazagran" },
+  { label: "Turkey", description: "Cezve" },
   { label: "Mexico", description: "Café de olla" },
 ];
 
-const COFFEE_TASTING_DATA = [
-  { name: "Ethiopia Yirgacheffe", notes: "Blueberry, dark chocolate, floral" },
-  { name: "Colombia Supremo", notes: "Caramel, citrus, nutty" },
-  { name: "Sumatra Mandheling", notes: "Earthy, herbs, dark chocolate" },
-  { name: "Kenya AA", notes: "Berry, wine, bright acidity" },
-  { name: "Costa Rica Tarrazu", notes: "Honey, orange, cocoa" },
-  { name: "Jamaica Blue Mountain", notes: "Mild, creamy, floral" },
-  { name: "Jamaica Blue Mountain", notes: "Mild, creamy, floral" },
+const ESPRESSO_DATA = [
+  { label: "History", description: "Creation and evolution" },
+  { label: "Latte", description: "Milk" },
+  { label: "Mocha", description: "Chocolate" },
+  { label: "Cappuccino", description: "Monk" },
 ];
 
-export { HISTORY_DATA, CHOOSE_DATA, CULTURE_DATA, COFFEE_TASTING_DATA };
+const COFFEE_TASTING_DATA = [
+  { name: "Raw Green Bean", notes: "Unprocessed coffee beans" },
+  { name: "Ethiopia", notes: "Blueberry, dark chocolate, floral" },
+  { name: "Brasil", notes: "dark chocolate, earthy, floral" },
+  { name: "Colombia", notes: "Caramel, citrus, nutty" },
+  { name: "Guatemala", notes: "fresh fruits herbs, earthy" },
+  { name: "Costa Rica", notes: "Honey, orange, cocoa" },
+  { name: "El Salvador", notes: "Honey, spicy" },
+];
+
+export {
+  HISTORY_DATA,
+  CHOOSE_DATA,
+  CULTURE_DATA,
+  ESPRESSO_DATA,
+  COFFEE_TASTING_DATA,
+};

@@ -6,6 +6,7 @@ import {
   CHOOSE_DATA,
   CULTURE_DATA,
   COFFEE_TASTING_DATA,
+  ESPRESSO_DATA,
 } from "@/data/coffee";
 import HeaderSection from "@/components/event/header";
 import CallendyBanner from "@/components/general/calendyBanner";
@@ -27,15 +28,21 @@ export default function CoffeeEventsPage() {
         />
         <Step
           stepNumber={2}
-          title="How to Choose "
+          title="How to Choose"
           data={CHOOSE_DATA}
-          duration="20 minutes"
+          duration="15 minutes"
         />
         <Step
           stepNumber={3}
           title="Different Cultures Preparation"
           data={CULTURE_DATA}
-          duration="20 minutes"
+          duration="10 minutes"
+        />
+        <Step
+          stepNumber={4}
+          title="Espresso"
+          data={ESPRESSO_DATA}
+          duration="5 minutes"
         />
         <TastingBanner stepNumber={4} tastingData={COFFEE_TASTING_DATA} />
         <CallendyBanner type="coffee" />

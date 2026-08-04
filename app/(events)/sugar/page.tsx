@@ -1,6 +1,6 @@
 "use client";
 
-import Step from "@/components/event/stepCard";
+import Step from "@/components/event/steps/generalStep/stepCard";
 import { HISTORY_DATA, SUGAR_TASTING_DATA } from "@/data/sugar";
 
 import HeaderSection from "@/components/event/header";

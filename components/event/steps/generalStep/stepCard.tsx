@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import ListItem from "@/components/event/listItem";
+import ListItem from "@/components/event/steps/generalStep/listItem";
 
 interface StepProps {
   stepNumber: number;

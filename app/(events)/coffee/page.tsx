@@ -1,6 +1,6 @@
 "use client";
 
-import Step from "@/components/event/stepCard";
+import Step from "@/components/event/steps/generalStep/stepCard";
 import {
   HISTORY_DATA,
   CHOOSE_DATA,
@@ -11,6 +11,8 @@ import {
 import HeaderSection from "@/components/event/header";
 import CallendyBanner from "@/components/general/calendyBanner";
 import TastingBanner from "@/components/event/tasting";
+import MeetStep from "@/components/event/steps/meet";
+import DiscussStep from "@/components/event/steps/discuss";
 
 export default function CoffeeEventsPage() {
   return (
@@ -20,31 +22,33 @@ export default function CoffeeEventsPage() {
         description="From Ethiopia to your cup history an tasting"
       />
       <div className="flex flex-col gap-3 mx-2">
+        <MeetStep />
         <Step
-          stepNumber={1}
+          stepNumber={2}
           title="History of Coffee"
           data={HISTORY_DATA}
           duration="20 minutes"
         />
         <Step
-          stepNumber={2}
+          stepNumber={3}
           title="How to Choose"
           data={CHOOSE_DATA}
           duration="15 minutes"
         />
         <Step
-          stepNumber={3}
+          stepNumber={4}
           title="Different Cultures Preparation"
           data={CULTURE_DATA}
           duration="10 minutes"
         />
         <Step
-          stepNumber={4}
+          stepNumber={5}
           title="Espresso"
           data={ESPRESSO_DATA}
           duration="5 minutes"
         />
-        <TastingBanner stepNumber={4} tastingData={COFFEE_TASTING_DATA} />
+        <TastingBanner stepNumber={6} tastingData={COFFEE_TASTING_DATA} />
+        <DiscussStep stepNumber={7} />
         <CallendyBanner type="coffee" />
       </div>
     </div>

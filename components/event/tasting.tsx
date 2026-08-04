@@ -24,7 +24,7 @@ interface TastingBannerProps {
 
 const TastingBanner = ({
   stepNumber = 4,
-  duration = "30 minutes",
+  duration = "10 minutes",
   tastingTitle = "Different Varieties to Taste",
   tastingData = COFFEE_TASTING_DATA,
 }: TastingBannerProps) => {

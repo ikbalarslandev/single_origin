@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Socials from "@/components/general/social/Socials";
 import { useRouter } from "next/navigation";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   const router = useRouter();
@@ -31,13 +33,29 @@ export default function Home() {
 
         <Socials />
 
+        {/* Navigation Arrows */}
+        <div className="flex items-center justify-between w-full mt-8">
+          <Link href="/wedo" className="flex items-center justify-center gap-2">
+            <FaArrowLeft />
+            <span>What We Do</span>
+          </Link>
+
+          <Link
+            href="/about"
+            className="flex items-center justify-center gap-2"
+          >
+            <span>About Us</span>
+            <FaArrowRight />
+          </Link>
+        </div>
+
         {/* Divider */}
         <div className="relative w-full max-w-md my-6">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-blood-dark"></div>
           </div>
           <div className="relative flex justify-center">
-            <span className="px-3 border border-blood-dark bg-nigga-brown  text-blood-dark rounded-full py-1 font-semibold">
+            <span className="px-3 border border-blood-dark bg-nigga-brown text-blood-dark rounded-full py-1 font-semibold">
               Events
             </span>
           </div>

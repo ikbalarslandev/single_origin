@@ -47,15 +47,6 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-
-          {/* Signature or divider */}
-          <div className="flex items-center justify-center gap-4 mt-6">
-            <div className="flex-1 max-w-20 h-px bg-blood-dark/30"></div>
-            <span className="text-blood-dark font-semibold text-sm tracking-wider">
-              — İkbal, Founder
-            </span>
-            <div className="flex-1 max-w-20 h-px bg-blood-dark/30"></div>
-          </div>
         </div>
       </div>
     </div>

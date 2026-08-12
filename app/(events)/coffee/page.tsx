@@ -12,6 +12,7 @@ import HeaderSection from "@/components/event/header";
 import TastingBanner from "@/components/event/tasting";
 import MeetStep from "@/components/event/steps/meet";
 import DiscussStep from "@/components/event/steps/discuss";
+import EventDetailsBanner from "@/components/general/EventDetails";
 
 export default function CoffeeEventsPage() {
   return (
@@ -48,6 +49,7 @@ export default function CoffeeEventsPage() {
         />
         <TastingBanner stepNumber={6} tastingData={COFFEE_TASTING_DATA} />
         <DiscussStep stepNumber={7} />
+        <EventDetailsBanner type="coffee" />
       </div>
     </div>
   );

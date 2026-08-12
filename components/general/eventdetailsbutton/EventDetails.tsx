@@ -1,23 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, Clock } from "lucide-react";
+import { MapPin, Clock } from "lucide-react";
 import GetDirectionsButton from "./DirectionsButton";
 
 interface EventDetailsBannerProps {
-  type: "coffee" | "sugar";
   title?: string;
-  description?: string;
-  className?: string;
 }
 
 const EventDetailsBanner = ({
-  type,
   title = "Wanna Join For Free?",
-  description = "Join us every day for a great time with amazing people!",
-  className = "",
 }: EventDetailsBannerProps) => {
   return (
-    <Card className={`border-2 border-blood-dark bg-white/30 ${className}`}>
+    <Card className={`border-2 border-blood-dark bg-white/30 `}>
       <CardContent className="p-6">
         <h3 className="font-bold text-2xl text-black mb-4 text-center">
           {title}

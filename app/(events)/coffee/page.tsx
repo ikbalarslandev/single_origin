@@ -49,7 +49,7 @@ export default function CoffeeEventsPage() {
         />
         <TastingBanner stepNumber={6} tastingData={COFFEE_TASTING_DATA} />
         <DiscussStep stepNumber={7} />
-        <EventDetailsBanner type="coffee" />
+        <EventDetailsBanner />
       </div>
     </div>
   );

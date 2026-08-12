@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Clock } from "lucide-react";
+import GetDirectionsButton from "./DirectionsButton";
 
 interface EventDetailsBannerProps {
   type: "coffee" | "sugar";
@@ -43,19 +44,7 @@ const EventDetailsBanner = ({
         </div>
 
         <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-          <Button
-            variant="event"
-            onClick={() => {
-              window.open(
-                "https://maps.app.goo.gl/Ewb246GgozigjkaA6",
-                "_blank",
-              );
-            }}
-            className="bg-blood-dark/40 text-black border-black"
-          >
-            <MapPin className="w-4 h-4" />
-            Get Directions
-          </Button>
+          <GetDirectionsButton />
 
           <Button
             variant="event"

@@ -12,7 +12,7 @@ import HeaderSection from "@/components/event/header";
 import TastingBanner from "@/components/event/tasting";
 import MeetStep from "@/components/event/steps/meet";
 import DiscussStep from "@/components/event/steps/discuss";
-import EventDetailsBanner from "@/components/general/EventDetails";
+import EventDetailsBanner from "@/components/general/eventdetailsbutton/EventDetails";
 
 export default function CoffeeEventsPage() {
   return (

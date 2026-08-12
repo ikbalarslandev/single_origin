@@ -28,7 +28,8 @@ const socialConfig = {
   },
   whatsapp: {
     icon: FaWhatsapp,
-    defaultHref: "https://wa.me/905524260406",
+    defaultHref:
+      "https://chat.whatsapp.com/IAr6xO2dWGm7S4pDdatse4?s=cl&p=i&ilr=2",
     label: "WhatsApp",
   },
 };

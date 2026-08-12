@@ -9,6 +9,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { MapPin, ExternalLink, Info } from "lucide-react";
+import Image from "next/image";
 
 interface GetDirectionsButtonProps {
   className?: string;
@@ -32,15 +33,12 @@ const GetDirectionsButton = ({ className = "" }: GetDirectionsButtonProps) => {
         <DialogContent className="max-w-md sm:max-w-lg bg-white rounded-lg p-0 overflow-hidden">
           {/* Image */}
           <div className="relative w-full h-48 bg-gray-200">
-            <img
-              src="/images/istiklal-mall-terrace.jpg"
-              alt="İstiklal Mall Terrace Floor"
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                // Fallback image if the actual image doesn't exist
-                (e.target as HTMLImageElement).src =
-                  "https://placehold.co/600x400/e2e8f0/1e293b?text=İstiklal+Mall+Terrace";
-              }}
+            <Image
+              src="/meetingPoint.png"
+              alt="İstiklal Mall Terrace Floor - Meeting Point"
+              fill
+              className="object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
@@ -80,7 +78,7 @@ const GetDirectionsButton = ({ className = "" }: GetDirectionsButtonProps) => {
                 <div>
                   <p className="font-semibold text-black text-sm">Address:</p>
                   <p className="text-sm text-black/70">
-                    İstiklal Mall, Terrace Floor (4.th Floor) <br />
+                    İstiklal Mall, Terrace Floor (4th Floor) <br />
                     İstiklal Caddesi Beyoğlu/İstanbul
                   </p>
                 </div>

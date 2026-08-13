@@ -1,7 +1,12 @@
-import { ReactNode } from "react";
-import { FaInstagram, FaTiktok, FaYoutube, FaWhatsapp } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTiktok,
+  FaYoutube,
+  FaWhatsapp,
+  FaMeetup,
+} from "react-icons/fa";
 
-type SocialType = "instagram" | "tiktok" | "youtube" | "whatsapp";
+type SocialType = "instagram" | "tiktok" | "youtube" | "whatsapp" | "meetup";
 
 interface SocialLinkProps {
   type: SocialType;
@@ -31,6 +36,11 @@ const socialConfig = {
     defaultHref:
       "https://chat.whatsapp.com/IAr6xO2dWGm7S4pDdatse4?s=cl&p=i&ilr=2",
     label: "WhatsApp",
+  },
+  meetup: {
+    icon: FaMeetup,
+    defaultHref: "https://www.meetup.com/single-origin-istanbul",
+    label: "Meetup",
   },
 };
 

@@ -1,20 +1,44 @@
 const HISTORY_DATA = [
-  { label: "8000 BC", description: "Sugarcane Discovery" },
-  { label: "500 BC", description: "Invention of Sugar" },
-  { label: "Ancient Persia", description: "First Sugar Trade" },
-  { label: "7th Century", description: "White Sugar Invention" },
-  { label: "13th Century", description: "Ispah Rebellion" },
-  { label: "13th Century", description: "Introduction to Europe" },
-  { label: "15th Century", description: "Madeira" },
-  { label: "1493", description: "Sugar Reaches the New World" },
-  { label: "1534", description: "Brazilian Sugar Colonies" },
-  { label: "16th Century", description: "Atlantic Slave Trade" },
-  { label: "17th Century", description: "Birth of Rum" },
-  { label: "17th Century", description: "Age of Pirates" },
+  {
+    label: "Early History",
+    description: "",
+    substeps: [
+      { label: "8000 BC", description: "Sugarcane Discovery" },
+      { label: "500 BC", description: "Invention of Sugar" },
+      { label: "Ancient Persia", description: "First Sugar Trade" },
+      { label: "7th Century", description: "White Sugar Invention" },
+      { label: "13th Century", description: "Ispah Rebellion" },
+    ],
+  },
+  {
+    label: "Venecian Monopoly",
+    description: "",
+    substeps: [
+      { label: "13th Century", description: "Introduction to Europe" },
+      { label: "15th Century", description: "Madeira" },
+    ],
+  },
+  {
+    label: "American Colonization",
+    description: "",
+    substeps: [
+      { label: "1493", description: "Sugar Reaches the New World" },
+      { label: "1534", description: "Brazilian Sugar Colonies" },
+      { label: "16th Century", description: "Atlantic Slave Trade" },
+      { label: "17th Century", description: "Birth of Rum" },
+      { label: "17th Century", description: "Pirates of the Caribbean" },
+    ],
+  },
   { label: "1624", description: "Creating Taiwan" },
-  { label: "1811", description: "Sugar Beet Discovery" },
-  { label: "1850", description: "Sugar Consumption Boom" },
-  { label: "1930s–1940s", description: "Hitler" },
+  {
+    label: "New Plant for Sugar ",
+    description: "",
+    substeps: [
+      { label: "1811", description: "Sugar Beet Discovery" },
+      { label: "1850", description: "Sugar Consumption Boom" },
+      { label: "1930s–1940s", description: "Hitler" },
+    ],
+  },
 ];
 
 const CHOOSE_DATA = [
@@ -26,20 +50,17 @@ const CHOOSE_DATA = [
 ];
 
 const CULTURE_DATA = [
-  { label: "France", description: "Café au lait culture" },
-  { label: "Japan", description: "Siphon & pour-over" },
-  { label: "Turkey", description: "Cezve & fortune-telling" },
-  { label: "Mexico", description: "Café de olla" },
+  { label: "China", description: "Rock Sugar" },
+  { label: "Japan", description: "Wagashi" },
+  { label: "Ottoman Empire", description: "Marmalade & delight" },
+  { label: "France", description: "Pâte à Choux" },
+  { label: "United States", description: "Pancakes" },
 ];
 
 const SUGAR_TASTING_DATA = [
   {
     name: "Traditional Turkish Sugar",
     notes: "from sugar beets",
-  },
-  {
-    name: "Classic Sugar Cubes",
-    notes: "from sugar cane",
   },
 ];
 

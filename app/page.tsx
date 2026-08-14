@@ -66,10 +66,12 @@ export default function Home() {
           <Button variant="event" onClick={() => router.push("/coffee")}>
             Coffee
           </Button>
-
-          <Button variant="comingsoon">Sugar</Button>
+          <Button variant="event" onClick={() => router.push("/sugar")}>
+            Sugar
+          </Button>
           <Button variant="comingsoon">Cacao</Button>
-
+          <Button variant="comingsoon">Beer</Button>
+          <Button variant="comingsoon">Tabacco</Button>
           {/* Add more event buttons here */}
         </div>
       </div>

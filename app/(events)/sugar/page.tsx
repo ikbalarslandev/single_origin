@@ -7,6 +7,7 @@ import HeaderSection from "@/components/event/header";
 import CallendyBanner from "@/components/general/calendyBanner";
 import TastingBanner from "@/components/event/tasting";
 import MeetStep from "@/components/event/steps/meet";
+import EventDetailsBanner from "@/components/general/eventdetailsbutton/EventDetails";
 
 export default function SugarEventsPage() {
   return (
@@ -40,7 +41,7 @@ export default function SugarEventsPage() {
           tastingData={SUGAR_TASTING_DATA}
           duration="10 minutes"
         />
-        <CallendyBanner type="sugar" />
+        <EventDetailsBanner />
       </div>
     </div>
   );

@@ -1,44 +1,12 @@
 const HISTORY_DATA = [
-  {
-    label: "Early History",
-    description: "",
-    substeps: [
-      { label: "8000 BC", description: "Sugarcane Discovery" },
-      { label: "500 BC", description: "Invention of Sugar" },
-      { label: "Ancient Persia", description: "First Sugar Trade" },
-      { label: "7th Century", description: "White Sugar Invention" },
-      { label: "13th Century", description: "Ispah Rebellion" },
-    ],
-  },
-  {
-    label: "Venecian Monopoly",
-    description: "",
-    substeps: [
-      { label: "13th Century", description: "Introduction to Europe" },
-      { label: "15th Century", description: "Madeira" },
-    ],
-  },
-  {
-    label: "American Colonization",
-    description: "",
-    substeps: [
-      { label: "1493", description: "Sugar Reaches the New World" },
-      { label: "1534", description: "Brazilian Sugar Colonies" },
-      { label: "16th Century", description: "Atlantic Slave Trade" },
-      { label: "17th Century", description: "Birth of Rum" },
-      { label: "17th Century", description: "Pirates of the Caribbean" },
-    ],
-  },
+  { label: "500BC", description: "Sugarcane​" },
+  { label: "7. Century", description: "White Sugar Invention" },
+  { label: "15. Century", description: "Europe First Meet" },
+  { label: "1493", description: "New World " },
+  { label: "1500s", description: "Rum" },
   { label: "1624", description: "Creating Taiwan" },
-  {
-    label: "New Plant for Sugar ",
-    description: "",
-    substeps: [
-      { label: "1811", description: "Sugar Beet Discovery" },
-      { label: "1850", description: "Sugar Consumption Boom" },
-      { label: "1930s–1940s", description: "Hitler" },
-    ],
-  },
+  { label: "1811", description: "Sugar Beet Cultivation" },
+  { label: "WW2", description: "Hitler and Sugar" },
 ];
 
 const CHOOSE_DATA = [

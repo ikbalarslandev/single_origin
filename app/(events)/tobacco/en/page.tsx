@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-const EnglishCacaoPage = () => {
+const EnglishTobaccoPage = () => {
   return (
     <div className="min-h-screen bg-nigga-brown/5 flex items-center justify-center p-4">
       <Card className="w-full max-w-md border-[#a6836c]/20 shadow-xl bg-white/90 backdrop-blur-sm">
@@ -11,11 +11,12 @@ const EnglishCacaoPage = () => {
           </div>
 
           {/* Title */}
-          <h1 className="text-2xl font-bold text-[#590000] mb-2">Cacao</h1>
+          <h1 className="text-2xl font-bold text-[#590000] mb-2">Tobacco</h1>
 
           {/* Description */}
           <p className="text-[#590000]/60 text-sm leading-relaxed">
-            There will be videos soon to learn the history and culture of Cacao.
+            There will be videos soon to learn the history and culture of
+            Tobacco.
           </p>
 
           {/* Divider */}
@@ -26,4 +27,4 @@ const EnglishCacaoPage = () => {
   );
 };
 
-export default EnglishCacaoPage;
+export default EnglishTobaccoPage;
